@@ -28,7 +28,7 @@ export class AuthService {
           // @ts-ignore
           this.cookieService.set('role', tab);
           localStorage.setItem('user_jwt', JSON.stringify(this.token));
-          this.router.navigateByUrl(`/`);
+          this.router.navigateByUrl(`/` + (tab == 'recruiter' ? tab : ''));
           this.snackBar.open('Welcome!', '', {
             horizontalPosition: 'end',
             verticalPosition: 'top',
@@ -71,7 +71,7 @@ export class AuthService {
           this.cookieService.set('user', user.email);
           // @ts-ignore
           this.cookieService.set('role', tab);
-          this.router.navigateByUrl(`/`);
+          this.router.navigateByUrl(`/` + (tab == 'recruiter' ? tab : ''));
           this.snackBar.open('Welcome!', '', {
             horizontalPosition: 'end',
             verticalPosition: 'top',

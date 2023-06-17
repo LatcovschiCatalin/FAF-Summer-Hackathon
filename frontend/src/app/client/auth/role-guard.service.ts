@@ -60,7 +60,7 @@ export class RoleGuard implements CanActivate {
           duration: 5000,
           panelClass: 'error'
         })
-        this.router.navigate(['login']);
+        this.router.navigate(['auth/login']);
         return of(false);
       }
     } else {
