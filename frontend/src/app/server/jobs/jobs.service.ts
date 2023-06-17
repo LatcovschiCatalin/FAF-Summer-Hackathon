@@ -9,7 +9,7 @@ import {Jobs} from "./jobs";
 @Injectable({
   providedIn: 'root'
 })
-export class UsersService {
+export class JobsService {
   private apiServer = "http://localhost:3000";
 
   httpOptions = {
@@ -21,36 +21,36 @@ export class UsersService {
   constructor(private httpClient: HttpClient) {
   }
 
-  post(job: Jobs, tab: String): Observable<Jobs> {
-    return this.httpClient.post<Jobs>(this.apiServer + `/${tab}/`, JSON.stringify(job), this.httpOptions)
+  post(job: Jobs): Observable<Jobs> {
+    return this.httpClient.post<Jobs>(this.apiServer + `/jobs/`, JSON.stringify(job), this.httpOptions)
       .pipe(
         catchError(this.errorHandler)
       )
   }
 
-  getById(id: any, tab: String): Observable<Jobs> {
-    return this.httpClient.get<Jobs>(this.apiServer + `/${tab}/` + id)
+  getById(id: any): Observable<Jobs> {
+    return this.httpClient.get<Jobs>(this.apiServer + `/jobs/` + id)
       .pipe(
         catchError(this.errorHandler)
       )
   }
 
-  get(tab: String): Observable<Jobs[]> {
-    return this.httpClient.get<Jobs[]>(this.apiServer + `/${tab}/`)
+  get(): Observable<Jobs[]> {
+    return this.httpClient.get<Jobs[]>(this.apiServer + `/jobs/`)
       .pipe(
         catchError(this.errorHandler)
       )
   }
 
-  put(job: Jobs, id: any, tab: String): Observable<Jobs> {
-    return this.httpClient.put<Jobs>(this.apiServer + `/${tab}/` + id, JSON.stringify(job), this.httpOptions)
+  put(job: Jobs, id: any): Observable<Jobs> {
+    return this.httpClient.put<Jobs>(this.apiServer + `/jobs/` + id, JSON.stringify(job), this.httpOptions)
       .pipe(
         catchError(this.errorHandler)
       )
   }
 
-  deleteById(id: any, tab: String) {
-    return this.httpClient.delete<Jobs>(this.apiServer + `/${tab}/` + id, this.httpOptions)
+  deleteById(id: any) {
+    return this.httpClient.delete<Jobs>(this.apiServer + `/jobs/` + id, this.httpOptions)
       .pipe(
         catchError(this.errorHandler)
       )

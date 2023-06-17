@@ -1,5 +1,4 @@
 export interface Jobs {
-  "active": boolean,
   "title": string,
   "duration": string,
   "image": string,
@@ -7,5 +6,6 @@ export interface Jobs {
   "deadline": string,
   "payment": string,
   "location": string,
-  "description": string
+  "description": string,
+  "recruiter": string
 }
