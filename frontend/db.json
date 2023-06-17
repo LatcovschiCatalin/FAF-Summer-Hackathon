@@ -1,0 +1,82 @@
+{
+  "student": [
+    {
+      "name": "Latcovschi",
+      "surname": "Catalin",
+      "email": "catalin.latcovschi@findjob.com",
+      "phone": "060855428",
+      "password": "catalin123",
+      "jobs": [],
+      "id": 1
+    },
+    {
+      "name": "wefgds",
+      "surname": "fds",
+      "email": "sdf@df.dfdd",
+      "phone": "22222222",
+      "password": "222222222",
+      "jobs": [],
+      "id": 2
+    }
+  ],
+  "recruiter": [
+    {
+      "id": 1,
+      "name": "Sandler",
+      "surname": "Adam",
+      "email": "adam.sandler@getjob.com",
+      "phone": "069344792",
+      "password": "adam123"
+    },
+    {
+      "name": "ujyh",
+      "surname": "tyh",
+      "email": "sd@dd.dd2",
+      "phone": "222222",
+      "password": "wwww",
+      "id": 2
+    },
+    {
+      "name": "ikujy",
+      "surname": "uiyj",
+      "email": "yujth@dd.dd",
+      "phone": "3333333",
+      "password": "333333",
+      "id": 3
+    },
+    {
+      "name": "11",
+      "surname": "22",
+      "email": "ws@ww.22",
+      "phone": "222222",
+      "password": "2222",
+      "id": 4
+    }
+  ],
+  "jobs": [
+    {
+      "title": "Walking my dog",
+      "duration": "1h 30 min",
+      "image": "assets/images/dog.png",
+      "students": 1,
+      "deadline": "17:30",
+      "payment": "300 lei",
+      "location": "Chisinau, str. Doina 21",
+      "description": "I need someone who can walk my dog while i'm out there playing my new role in Murder Mystery 2.\nI need you to take him on a walk through the park, his dog friends will meet him there, just make sure he will be okay.",
+      "recruiter": "adam.sandler@getjob.com",
+      "id": 1
+    },
+    {
+      "title": "uyh5",
+      "duration": "y5t",
+      "image": "ytgt",
+      "recruiter": "22",
+      "students": "2",
+      "deadline": "rrrrr",
+      "payment": "4",
+      "location": "4",
+      "description": "4",
+      "id": 2
+    }
+  ]
+}

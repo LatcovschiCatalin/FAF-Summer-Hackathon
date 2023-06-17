@@ -7,7 +7,7 @@ import {AuthGuard} from "./client/auth/auth-guard.service";
 export const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./client/users/users.module').then(m => m.UsersModule),
+    loadChildren: () => import('./client/student/student.module').then(m => m.StudentModule),
     canActivate: [AuthGuard, RoleGuard],
     data: {roles: ['student']}
   },

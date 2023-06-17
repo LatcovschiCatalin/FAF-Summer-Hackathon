@@ -1,0 +1,44 @@
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: whitesmoke;
+  padding: 20px 50px;
+
+  .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+
+    img {
+      width: 40px;
+      border-radius: 5px;
+      margin-right: 15px;
+    }
+  }
+
+  .user-name {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      width: 50px;
+      border-radius: 50%;
+    }
+
+    .notifications {
+      cursor: pointer;
+      width: 30px;
+      margin-right: 20px;
+    }
+  }
+}
