@@ -1,0 +1,23 @@
+<div class="details">
+  <div class="item" *ngFor="let key of keys">
+    <div class="values" *ngIf="key != 'id'">
+      <div class="title">
+        {{key}}:
+      </div>
+      <div class="value">
+        <div>
+          <a *ngIf="key == 'email' || key == 'phone'; else noLink"
+             [href]="key == 'email' ? 'mailto:' + data[key] : 'tel:'+data[key]">
+            {{data[key]}}
+          </a>
+          <ng-template #noLink>
+            {{data[key]}}
+          </ng-template>
+        </div>
+
+      </div>
+      <br>
+    </div>
+  </div>
+  <div class="button" (click)="back()">Go Back</div>
+</div>
