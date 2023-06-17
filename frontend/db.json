@@ -6,7 +6,20 @@
       "email": "catalin.latcovschi@findjob.com",
       "phone": "060855428",
       "password": "catalin123",
-      "jobs": [],
+      "jobs": [
+        {
+          "title": "Hai la stroika",
+          "duration": "6h",
+          "image": "assets/images/stroica.jpg",
+          "students": 8,
+          "deadline": "18.06.23 11:30",
+          "payment": "600 lei",
+          "location": "Chisinau, str. Paris 28/1",
+          "description": "Băieți, hai veniți și mă ajutați, am nevoie de niște oameni care să clădească cochileții și la moment m-a lăsat fratele de unul singur. Vă plătesc pe fiecare cu o sumă favorabilă, numai să veniți și să faceți lucrul care vi se cere. Vă mulțumesc!",
+          "recruiter": "vasile.ursu@stroika.md",
+          "id": 5
+        }
+      ],
       "id": 1
     },
     {
@@ -121,18 +134,6 @@
   ],
   "jobs": [
     {
-      "title": "Walking my dog",
-      "duration": "1h 30 min",
-      "image": "assets/images/dog-walkig.jpg",
-      "students": 1,
-      "deadline": "17:30",
-      "payment": "300 lei",
-      "location": "Chisinau, str. Doina 21",
-      "description": "I need someone who can walk my dog while i'm out there playing my new role in Murder Mystery 2.\nI need you to take him on a walk through the park, his dog friends will meet him there, just make sure he will be okay.",
-      "recruiter": "adam.sandler@getjob.com",
-      "id": 1
-    },
-    {
       "title": "Dog walking",
       "duration": "2h",
       "image": "assets/images/dog.png",
@@ -155,6 +156,18 @@
       "description": "Băieți, hai veniți și mă ajutați, am nevoie de niște oameni care să clădească cochileții și la moment m-a lăsat fratele de unul singur. Vă plătesc pe fiecare cu o sumă favorabilă, numai să veniți și să faceți lucrul care vi se cere. Vă mulțumesc!",
       "recruiter": "vasile.ursu@stroika.md",
       "id": 5
+    },
+    {
+      "title": "Walking my dog",
+      "duration": "1h 30 min",
+      "image": "assets/images/dog-walkig.jpg",
+      "students": 1,
+      "deadline": "17:30",
+      "payment": "300 lei",
+      "location": "Chisinau, str. Doina 21",
+      "description": "I need someone who can walk my dog while i'm out there playing my new role in Murder Mystery 2.\nI need you to take him on a walk through the park, his dog friends will meet him there, just make sure he will be okay.",
+      "recruiter": "adam.sandler@getjob.com",
+      "id": 1
     },
     {
       "title": "Website Developer",

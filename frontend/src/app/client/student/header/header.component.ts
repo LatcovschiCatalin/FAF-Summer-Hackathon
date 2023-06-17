@@ -22,7 +22,6 @@ export class HeaderComponent implements OnInit {
       for (let i = 0; i < res.length; i++) {
         if (res[i].email == this.cookieService.get('user')) {
           this.user = res[i];
-          console.log(this.user);
         }
       }
     })

@@ -1,0 +1,50 @@
+<div class="container">
+  <app-header></app-header>
+  <div class="content">
+    <div class="list">
+      <div class="jobs-list">
+
+        <a href="/">
+          <img class="back" src="https://cdn-icons-png.flaticon.com/512/0/340.png">
+        </a>
+        <div class="jobs-results">
+          Work time
+        </div>
+
+        <div class="jobs">
+          <div class="job" *ngFor="let job of jobs">
+            <div class="image">
+              <img [src]="job?.image">
+            </div>
+            <div class="details">
+              <div class="title">
+                {{job?.title}}
+              </div>
+              <div class="benefits">
+                {{job?.payment}} ⚫ Duration {{job.duration}} ⚫ Left {{job.students}}
+              </div>
+              <div class="description">
+                {{job.description}}
+              </div>
+            </div>
+            <div class="time">
+              <a [href]="'https://www.google.com/maps/place/' + job.location">
+                <div class="location">
+                  <img src="https://cdn-icons-png.flaticon.com/512/64/64113.png">
+                  {{job.location}}
+                </div>
+              </a>
+
+              <div class="deadline">
+                Deadline {{job.deadline}}
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</div>
+

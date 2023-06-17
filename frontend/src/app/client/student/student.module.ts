@@ -8,6 +8,7 @@ import { JobsComponent } from './jobs/jobs.component';
 import { JobsListComponent } from './jobs/jobs-list/jobs-list.component';
 import {FormsModule} from "@angular/forms";
 import { FooterComponent } from './footer/footer.component';
+import { SelectedJobsComponent } from './jobs/selected-jobs/selected-jobs.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { FooterComponent } from './footer/footer.component';
     HeaderComponent,
     JobsComponent,
     JobsListComponent,
-    FooterComponent
+    FooterComponent,
+    SelectedJobsComponent
   ],
     imports: [
         CommonModule,
