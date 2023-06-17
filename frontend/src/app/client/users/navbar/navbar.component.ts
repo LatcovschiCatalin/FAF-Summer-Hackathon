@@ -1,5 +1,7 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {AuthService} from "../../auth/auth.service";
+import {UsersService} from "../../../server/users/users.service";
+import {CookieService} from "ngx-cookie-service";
 
 @Component({
   selector: 'app-navbar',
@@ -14,11 +16,22 @@ export class NavbarComponent implements OnInit {
     title: "Users list"
   }
 
+  user = {
+    "name": '',
+    "surname": ''
+  }
 
-  constructor(private authService: AuthService) {
+  constructor(private authService: AuthService, private usersService: UsersService, private cookieService: CookieService) {
   }
 
   ngOnInit(): void {
+    this.usersService.get(this.cookieService.get('role')).subscribe((res) => {
+      for (let i = 0; i < res.length; i++) {
+        if (res[i].email == this.cookieService.get('user')) {
+          this.user = res[i];
+        }
+      }
+    })
   }
 
 

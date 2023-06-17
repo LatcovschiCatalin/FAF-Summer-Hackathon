@@ -5,12 +5,14 @@ import {of} from "rxjs";
 import {UsersService} from "../../server/users/users.service";
 import {Users} from "../../server/users/users";
 import {MatSnackBar} from "@angular/material/snack-bar";
+import {CookieService} from "ngx-cookie-service";
 
 @Injectable()
 export class AuthService {
   constructor(
     private router: Router,
     private snackBar: MatSnackBar,
+    private cookieService: CookieService,
     private crudService: UsersService) {
   }
 
@@ -22,6 +24,9 @@ export class AuthService {
       for (let i = 0; i < res.length; i++) {
         if (user.email === res[i].email) {
           findUser = true;
+          this.cookieService.set('user', user.email);
+          // @ts-ignore
+          this.cookieService.set('role', tab);
           localStorage.setItem('user_jwt', JSON.stringify(this.token));
           this.router.navigateByUrl(`/`);
           this.snackBar.open('Welcome!', '', {
@@ -63,6 +68,9 @@ export class AuthService {
       if (post) {
         this.crudService.post(user, tab).subscribe((res) => {
           localStorage.setItem('user_jwt', JSON.stringify(this.token));
+          this.cookieService.set('user', user.email);
+          // @ts-ignore
+          this.cookieService.set('role', tab);
           this.router.navigateByUrl(`/`);
           this.snackBar.open('Welcome!', '', {
             horizontalPosition: 'end',
