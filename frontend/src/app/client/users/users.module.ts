@@ -12,13 +12,15 @@ import {ServicesModule} from "../services/services.module";
 import {UsersService} from "../../server/users/users.service";
 import {HttpClientModule} from "@angular/common/http";
 import {JobsService} from "../../server/jobs/jobs.service";
+import { OffertsComponent } from './pages/offerts/offerts.component';
 
 
 @NgModule({
   declarations: [
     UsersComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    OffertsComponent
   ],
   imports: [
     CommonModule,

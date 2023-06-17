@@ -19,6 +19,8 @@ export class AuthService {
   token = 'usertoken123'
 
   login(user: Users, tab: String) {
+    this.cookieService.delete('role');
+    this.cookieService.delete('user');
     let findUser = false;
     this.crudService.get(tab).subscribe((res) => {
       for (let i = 0; i < res.length; i++) {
@@ -51,6 +53,9 @@ export class AuthService {
   }
 
   register(user: Users, tab: String) {
+    this.cookieService.delete('role');
+    this.cookieService.delete('user');
+
     let post = true;
     this.crudService.get(tab).subscribe((res) => {
       for (let i = 0; i < res.length; i++) {

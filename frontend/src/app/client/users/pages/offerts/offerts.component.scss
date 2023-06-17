@@ -1,0 +1,98 @@
+.list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  padding: 20px 50px;
+
+  .back {
+    width: 48px;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .jobs-list {
+    width: 100%;
+    margin-left: 10px;
+    margin-right: auto;
+    margin-top: 90px;
+
+    .jobs-results {
+      margin-top: 20px;
+      font-size: 24px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .time {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+      width: 19%;
+    }
+
+    .location {
+      display: flex;
+      cursor: pointer;
+      justify-content: space-between;
+      align-items: center;
+
+      img {
+        margin-right: 7px;
+        width: 24px;
+      }
+
+      font-weight: bold;
+    }
+
+    .deadline {
+      margin-top: 6px;
+      color: gray;
+    }
+
+    .jobs {
+      .job {
+        margin-top: 15px;
+        width: 100%;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .details {
+          margin: 0 20px;
+          width: 65%;
+
+          .title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+          }
+
+          .benefits {
+            margin-bottom: 15px;
+            font-size: 18px;
+            color: gray;
+          }
+
+          .description {
+            font-size: 18px;
+            line-height: 23px;
+          }
+        }
+
+        .image {
+          img {
+            width: 250px;
+          }
+        }
+      }
+    }
+  }
+}
+
