@@ -1,0 +1,47 @@
+.list {
+  display: flex;
+  justify-content: space-between;
+
+  .jobs-list {
+    width: 100%;
+    margin-left: 10px;
+    margin-right: auto;
+
+
+    .search-engine {
+      img {
+        width: 29px;
+        position: absolute;
+        transform: translate(19px, 15px);
+      }
+
+      input {
+        padding: 20px 57px;
+        color: gray;
+        border-radius: 5px;
+        width: 100%;
+        outline: none;
+        border: 1px solid lightgray;
+      }
+
+      .search {
+        position: absolute;
+        width: 120px;
+        border-radius: 5px;
+        border: none;
+        height: 38px;
+        background: #0C445C;
+        cursor: pointer;
+        color: white;
+        transform: translate(-145px, 10px);
+      }
+
+    }
+
+    .jobs-results {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+  }
+}
+

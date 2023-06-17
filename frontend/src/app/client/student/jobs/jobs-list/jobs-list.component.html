@@ -1,0 +1,14 @@
+<div class="list">
+  <div class="jobs-list">
+    <div class="search-engine">
+      <img src="https://static.vecteezy.com/system/resources/previews/001/504/972/non_2x/search-icon-free-vector.jpg">
+      <input type="text" placeholder="Search job title or keyword" [(ngModel)]="searchValue" (keydown.enter)=search()>
+      <button class="search" (click)="search()">Find jobs</button>
+    </div>
+
+    <div class="jobs-results">
+      {{this.filteredData.length}} Jobs results
+    </div>
+  </div>
+</div>
+
