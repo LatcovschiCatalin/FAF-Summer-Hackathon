@@ -9,6 +9,38 @@
     <div class="jobs-results">
       {{this.filteredData.length}} Jobs results
     </div>
+
+    <div class="jobs">
+      <div class="job" *ngFor="let job of filteredData">
+        <div class="image">
+          <img [src]="job.image">
+        </div>
+        <div class="details">
+          <div class="title">
+            {{job.title}}
+          </div>
+          <div class="benefits">
+            {{job.payment}} ⚫ Duration {{job.duration}} ⚫ Left {{job.students}}
+          </div>
+          <div class="description">
+            {{job.description}}
+          </div>
+        </div>
+        <div class="time">
+          <a [href]="'https://www.google.com/maps/place/' + job.location">
+            <div class="location">
+              <img src="https://cdn-icons-png.flaticon.com/512/64/64113.png">
+              {{job.location}}
+            </div>
+          </a>
+
+          <div class="deadline">
+            Deadline {{job.deadline}}
+          </div>
+          <button class="apply" (click)="apply()">Apply</button>
+        </div>
+
+      </div>
+    </div>
   </div>
 </div>
-

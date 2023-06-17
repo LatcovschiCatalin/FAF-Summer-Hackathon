@@ -36,4 +36,7 @@ export class JobsListComponent implements OnInit {
     });
   }
 
+  apply() {
+
+  }
 }
