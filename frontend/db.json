@@ -8,15 +8,6 @@
       "password": "catalin123",
       "jobs": [],
       "id": 1
-    },
-    {
-      "name": "wefgds",
-      "surname": "fds",
-      "email": "sdf@df.dfdd",
-      "phone": "22222222",
-      "password": "222222222",
-      "jobs": [],
-      "id": 2
     }
   ],
   "recruiter": [
@@ -29,35 +20,83 @@
       "password": "adam123"
     },
     {
-      "name": "ujyh",
-      "surname": "tyh",
-      "email": "sd@dd.dd2",
-      "phone": "222222",
-      "password": "wwww",
-      "id": 2
+      "id": 2,
+      "name": "John",
+      "surname": "Adam",
+      "email": "john.jackson@getjob.com",
+      "phone": "069897792",
+      "password": "johnofgod"
     },
     {
-      "name": "ikujy",
-      "surname": "uiyj",
-      "email": "yujth@dd.dd",
-      "phone": "3333333",
-      "password": "333333",
-      "id": 3
+      "id": 3,
+      "name": "Dominic",
+      "surname": "Toretto",
+      "email": "dominic.toretto@family.com",
+      "phone": "078646583",
+      "password": "familyismypass"
     },
     {
-      "name": "11",
-      "surname": "22",
-      "email": "ws@ww.22",
-      "phone": "222222",
-      "password": "2222",
-      "id": 4
+      "id": 4,
+      "name": "Cristiano",
+      "surname": "Ronaldo",
+      "email": "ronaldo.7@getjob.com",
+      "phone": "069344890",
+      "password": "crisronalo"
+    },
+    {
+      "id": 5,
+      "name": "Ursu",
+      "surname": "Vasile",
+      "email": "vasile.ursu@stroika.md",
+      "phone": "060579482",
+      "password": "cochileti123"
+    },
+    {
+      "id": 6,
+      "name": "Alexandru ",
+      "surname": "Alexandri",
+      "email": "alexpro@gmail.com",
+      "phone": "060976864",
+      "password": "Alesandrio97"
+    },
+    {
+      "id": 7,
+      "name": "Baton",
+      "surname": "Ion",
+      "email": "ion.baton@insta.com",
+      "phone": "069201124",
+      "password": "painepeviata"
+    },
+    {
+      "id": 8,
+      "name": "Felix ",
+      "surname": "Arvid",
+      "email": "pewdiepie@gmail.com",
+      "phone": "060999864",
+      "password": "12345"
+    },
+    {
+      "id": 9,
+      "name": "Galben",
+      "surname": "Corneliu",
+      "email": "corneliu.gal93@gmail.com",
+      "phone": "060606864",
+      "password": "galbenus93"
+    },
+    {
+      "id": 10,
+      "name": "Vladimir",
+      "surname": "Zelinski",
+      "email": "constructorsarechad@gmail.com",
+      "phone": "067779864",
+      "password": "12345abc"
     }
   ],
   "jobs": [
     {
       "title": "Walking my dog",
       "duration": "1h 30 min",
-      "image": "assets/images/dog.png",
+      "image": "assets/images/dog-walkig.jpg",
       "students": 1,
       "deadline": "17:30",
       "payment": "300 lei",
@@ -67,16 +106,112 @@
       "id": 1
     },
     {
-      "title": "uyh5",
-      "duration": "y5t",
-      "image": "ytgt",
-      "recruiter": "22",
-      "students": "2",
-      "deadline": "rrrrr",
-      "payment": "4",
-      "location": "4",
-      "description": "4",
+      "title": "Website Developer",
+      "duration": "10 hours",
+      "image": "assets/images/developer.png",
+      "students": 1,
+      "deadline": "December 31, 2023",
+      "payment": "300 lei/hour",
+      "location": "Anywhere",
+      "description": "We need an experienced website developer to create a responsive and visually appealing website for our business. Proficiency in HTML, CSS, JavaScript, and WordPress is required. The project timeline and compensation will be discussed upon contact.",
+      "recruiter": "john.jackson@getjob.com",
       "id": 2
+    },
+    {
+      "title": "Babysitting",
+      "duration": "3h",
+      "image": "assets/images/brian.jpg",
+      "students": 1,
+      "deadline": "16:40",
+      "payment": "250 lei",
+      "location": "Durlesti, str. N. Dimo 4",
+      "description": "My liitle Brian needs babysitting while i'm ou there taking my revenge on Dante for killing my family. My family is everything for me, so i need someone who cares about family the way i do and keep little B safe. If he enters the car, don't worry, i'm sure he can drive the car better than you.",
+      "recruiter": "dominictoretto@family.com",
+      "id": 3
+    },
+    {
+      "title": "Dog walking ",
+      "duration": "2h",
+      "image": "dog.png",
+      "students": 1,
+      "deadline": "21/06/23",
+      "payment": "400 lei",
+      "location": "Chisinau, B. Dacia 4",
+      "description": "We need a someone to walk our dogs outside by the parks that are around our house since we are in Portugal. It is needed to go one hour one day and the next day another hour. No experience needed.",
+      "recruiter": "ronaldo.cristiano7@getjob.com",
+      "id": 4
+    },
+    {
+      "title": "Hai la stroika",
+      "duration": "6h",
+      "image": "assets/images/stroica.jpg",
+      "students": 8,
+      "deadline": "18.06.23 11:30",
+      "payment": "600 lei",
+      "location": "Chisinau, str. Paris 28/1",
+      "description": "Băieți, hai veniți și mă ajutați, am nevoie de niște oameni care să clădească cochileții și la moment m-a lăsat fratele de unul singur. Vă plătesc pe fiecare cu o sumă favorabilă, numai să veniți și să faceți lucrul care vi se cere. Vă mulțumesc!",
+      "recruiter": "vasile.ursu@stroika.md",
+      "id": 5
+    },
+    {
+      "title": "Fence Painting",
+      "duration": "20 h",
+      "image": "assets/images/fence.png",
+      "students": 2,
+      "deadline": "22.06.23 12:00",
+      "payment": "400 lei",
+      "location": "Chisinau, str. Hrușcă 3/2",
+      "description": " We need two skilled individuals to paint a fence in Anenii Noi, Moldova. No experience in fence painting needed. All equipment provided!",
+      "recruiter": "alexpro@gmail.com",
+      "id": 6
+    },
+    {
+      "title": "Cleaning the yard",
+      "duration": "2h",
+      "image": "assets/images/ograda.jpg",
+      "students": 2,
+      "deadline": "Unlimited",
+      "payment": "200 lei",
+      "location": "Codru, str. A. Mateevici 5",
+      "description": "I need someone who can clean my yard, i will pay decently. Thank you!",
+      "recruiter": "ion.baton@insta.com",
+      "id": 7
+    },
+    {
+      "title": "Content Moderator",
+      "duration": "5 h",
+      "image": "assets/images/moderator.jpg",
+      "students": 5,
+      "deadline": "31.01.24 12:00",
+      "payment": "350 lei",
+      "location": "Anywhere",
+      "description": "We are hiring five content moderators to review and moderate user-generated content on twitch. Responsibilities include enforcing community guidelines, identifying and removing inappropriate content, and ensuring a safe online environment. This gig requires strong attention to detail and the ability to handle sensitive content.",
+      "recruiter": "pewdiepie@gmail.com",
+      "id": 8
+    },
+    {
+      "title": "Washing my wife's car",
+      "duration": "3h",
+      "image": "assets/images/toyota.jpg",
+      "students": 4,
+      "deadline": "20.06.23 12:00",
+      "payment": "400 lei",
+      "location": "Chisinau, str. Hrușcă 3/2",
+      "description": " My wife is gonna arrive in a week and i need some students to wash my wife's car so that i can surprise her with a clean car. I will pay decently as long as you will make her car look as new. Thank you very much!",
+      "recruiter": "corneliu.gal93@gmail.com",
+      "id": 9
+    },
+    {
+      "title": "Construction Worker ",
+      "duration": "25 h",
+      "image": "assets/images/stroici.png",
+      "students": 7,
+      "deadline": "21.06.23 ",
+      "payment": "300 lei",
+      "location": "B. Decebal 4",
+      "description": "We need a someone to help our engineers and superior construction workers to construct a brand new modern building. No experience needed, only will to work and strength.",
+      "recruiter": "constructorsarechad@gmail.com",
+      "id": 10
     }
   ]
 }
